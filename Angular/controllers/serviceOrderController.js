@@ -33,25 +33,6 @@
         $scope.loadServiceOrderData(taskId);
     };
 
-
-
-    $scope.openPopup = function () {
-
-        $.prompt("Any Unsaved Task Information will be saved if you continue"
-            , {
-                buttons: { "Ok": true, "Cancel": false },
-                defaultButton: 2,
-                classes: {
-                    button: "green_admin_button jqitrialoffer"
-                },
-                submit: function (e, v, m, f) {
-                    if (v) {
-                        $('#openedModalServiceOrder').click();;
-
-                    }
-                }
-            });
-    };
     // Save order 
     $scope.saveOrder = function () {
 
